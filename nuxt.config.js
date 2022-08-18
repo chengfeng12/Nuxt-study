@@ -35,8 +35,7 @@ export default {
   // 安装的插件需要在 modules 模块下加载
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    "@nuxtjs/router"
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -47,5 +46,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  router: {
+    middleware: "auth" // String 或 Array
   }
 }

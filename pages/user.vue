@@ -4,3 +4,12 @@
     <router-view></router-view>
   </div>
 </template>
+
+<script>
+export default {
+  validate({ params, query }) {
+    console.log("validate", params, query);
+    return /^\d+$/.test(params.id)
+  },
+}
+</script>

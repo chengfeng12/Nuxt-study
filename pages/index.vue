@@ -2,6 +2,9 @@
   <div>
     首页
     <button @click="goUser">我的页面</button>
+
+    <p>cousnt: {{ $store.state.count }}</p>
+    <button @click="add">+</button>
   </div>
 </template>
 
@@ -25,11 +28,18 @@ export default {
       ]
     }
   },
+  // middleware: "auth",
+  // middleware() {
+  //   console.log("middleware");
+  // },
   methods: {
     goUser() {
       this.$router.push({
-        path: "/user/my"
+        path: "/user/123"
       })
+    },
+    add() {
+      this.$store.commit("increment");
     }
   }
 }
