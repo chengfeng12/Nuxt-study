@@ -1,6 +1,7 @@
 node_modules
 /dist
 /zip
+.nuxt
 
 # local env files
 .env.local
