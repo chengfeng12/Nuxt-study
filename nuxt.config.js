@@ -8,7 +8,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'home', name: 'home page', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -18,6 +18,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "@/assets/style/reset.css",
+    {
+      src: "@/assets/style/index.scss",
+      lang: "scss"
+    }
+    
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
