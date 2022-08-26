@@ -26,6 +26,13 @@ export default {
     
   ],
 
+  // loading 配置
+  // loading: {
+  //   color: 'blue',
+  //   height: '50px'
+  // },
+  loading: "~/components/loading.vue",
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
